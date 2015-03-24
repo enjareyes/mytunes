@@ -23,7 +23,7 @@ var AppModel = Backbone.Model.extend({
     }, this); 
 
     params.library.on('dequeue', function(song){
-      //when dequeue is fired get get song queue model
+      //when dequeue is fired get song queue model
       this.get('songQueue').remove(song)
     }, this); 
 
